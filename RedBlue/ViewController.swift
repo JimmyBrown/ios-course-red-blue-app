@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var blueDonk: UIImageView!
+    @IBOutlet weak var redEle: UIImageView!
+    @IBOutlet weak var hideRed: UIButton!
+    @IBOutlet weak var hideBlue: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func hideTheDonk(sender: AnyObject) {
+        blueDonk.hidden = true
+    }
+    @IBAction func hideTheEle(sender: AnyObject) {
+        redEle.hidden = true
+        }
 
 }
 
